@@ -66,11 +66,11 @@ function draw()
   
   Matter.Body.rotate(ground1,angle);
   push();//nueva posición
-  translate(ground1.position.x,ground.position.y);//moverlo
+  translate(ground1.position.x,ground.position.y);//moverlo  // AQUI AL SEGUNDO GROUND LE FALTA EL NUMERO 1 
   rotate(angle);
   pop();
   angle +=0.1;
-  rect(0,0,100,20);
+  rect(0,0,100,20); // HAY QUE MOVER ESTA INSTRUCCIÓN ARRIBA DE POP 
   ellipse(ball.position.x,ball.position.y,20); //funcion para la pelota
   rect(ground1.position.x,ground1.position.y,650,20);//escribir una función rectangle para mostrar el suelo.
 
